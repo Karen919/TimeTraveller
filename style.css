@@ -1,0 +1,250 @@
+.webgl
+{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: -1;
+}
+.password {
+  color: #fff;
+  font-size: x-large;
+}
+@media (min-width:300px) {
+  .password {
+    font-size: 18px;
+  }
+}
+@media (min-width:600px) {
+  .password {
+    font-size: 20px;
+  }
+}
+@media (min-width:1000px) {
+  .password {
+    font-size: 23px;
+  }
+}
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    z-index: 23;
+  }
+  input[type="number"] {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  
+
+  @media (min-width:300px) {
+    input[type="number"] {
+      margin-top: 10px;
+      padding: 2px;
+      font-size: 12px;
+      border-radius: 1px;    }
+  }
+  @media (min-width:600px) {
+    input[type="number"] {
+      margin-top: 15px;
+      padding: 5px;
+      font-size: 15px;
+      border-radius: 3px;    }
+  }
+  @media (min-width:1000px) {
+    input[type="number"] {
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 5px;}
+  }
+  /* button {
+    margin-top: 20px;
+    padding: 20px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  } */
+
+       
+
+  body{
+    overflow: hidden;
+    margin: 0;
+  }
+
+
+
+  .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+@media (min-width:300px) {
+  .glow-on-hover {
+    width: 120px;
+    height: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 7px 7px;
+    font-size: 10px;
+  }
+}
+
+@media (min-width:600px) {
+  .glow-on-hover {
+    width: 160px;
+    height: 30px;
+    border-radius: 7px;
+    margin-top: 15px;
+    padding: 15px 15px;
+    font-size: 15px;
+  }
+}
+@media (min-width:1000px) {
+  .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px 20px;
+    font-size: 18px;
+  }
+}
+
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #994ab9, #8045c0, #30302c, #a253bd, #77378c, #292a2f, #7a00ff, #372f35, #77279c);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+#div {
+  z-index: 3;
+  color:rgb(255, 255, 255);
+  /* font-size: 48px;
+  padding: 50px; */
+}
+
+@media (min-width:300px) {
+  #div {
+    font-size: 10px;
+  }
+}
+
+@media (min-width:400px) {
+  #div {
+    font-size: 12px;
+    padding: 5px;
+
+  }
+}
+@media (min-width:500px) {
+  #div {
+    font-size: 15px;
+    padding: 10px;
+
+  }
+}
+@media (min-width:600px) {
+  #div {
+    font-size: 16px;
+    padding: 13px;
+
+  }
+}
+@media (min-width:700px) {
+  #div {
+    font-size: 20px;
+    padding: 26px;
+
+  }
+}
+@media (min-width:800px) {
+  #div {
+    font-size: 21px;
+    padding: 29px;
+
+  }
+}
+@media (min-width:900px) {
+  #div {
+    font-size: 22px;
+    padding: 30px;
+
+  }
+}
+@media (min-width:1000px) {
+  #div {
+    font-size: 23px;
+    padding: 40px;
+
+  }
+}
+@media (min-width:1100px) {
+  #div {
+    font-size: 25px;
+    padding: 50px;
+
+  }
+}
